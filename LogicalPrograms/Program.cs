@@ -13,7 +13,8 @@ namespace LogicalPrograms
              while (flag)
              {
                  Console.WriteLine("\n 1.Fibonacci Series."
-                      + "\n 2.Exit \n");
+                                 + "\n 2.Perfect Number."
+                                 + "\n 3.Exit \n");
                  int option = Convert.ToInt32(Console.ReadLine());
                  switch (option)
                  {
@@ -22,6 +23,10 @@ namespace LogicalPrograms
                          fibonacci.FiboSeries();
                          break;
                      case 2:
+                         PerfectNumber perfectnum = new PerfectNumber();
+                         perfectnum.CheckPerfectNumber();
+                         break;
+                     case 3:
                          flag = false;
                          break;
                      default: Console.WriteLine("Choose Correct option");
