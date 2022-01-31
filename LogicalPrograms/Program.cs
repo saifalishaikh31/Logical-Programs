@@ -15,7 +15,8 @@ namespace LogicalPrograms
                  Console.WriteLine("\n 1.Fibonacci Series."
                                  + "\n 2.Perfect Number."
                                  + "\n 3.Prime Number."
-                                 + "\n 3.Exit \n");
+                                 + "\n 4.Reverse A Number."
+                                 + "\n 5.Exit \n");
                  int option = Convert.ToInt32(Console.ReadLine());
                  switch (option)
                  {
@@ -32,6 +33,10 @@ namespace LogicalPrograms
                          primenum.CheckPrimeNumber();
                          break;
                      case 4:
+                         ReverseANumber reversenum = new ReverseANumber();
+                         reversenum.CheckReverseANumber();
+                         break;
+                     case 5:
                          flag = false;
                          break;
                      default: Console.WriteLine("Choose Correct option");
