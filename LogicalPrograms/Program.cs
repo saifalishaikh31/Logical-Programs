@@ -16,7 +16,8 @@ namespace LogicalPrograms
                                  + "\n 2.Perfect Number."
                                  + "\n 3.Prime Number."
                                  + "\n 4.Reverse A Number."
-                                 + "\n 5.Exit \n");
+                                 + "\n 5.Generate Coupon Numbers."
+                                 + "\n 6.Exit \n");
                  int option = Convert.ToInt32(Console.ReadLine());
                  switch (option)
                  {
@@ -37,6 +38,10 @@ namespace LogicalPrograms
                          reversenum.CheckReverseANumber();
                          break;
                      case 5:
+                         CouponNumbers couponnum = new CouponNumbers();
+                         couponnum.GenerateCoupunNumbers();
+                         break;
+                     case 6:
                          flag = false;
                          break;
                      default: Console.WriteLine("Choose Correct option");
